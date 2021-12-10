@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="loader">
+        <h3 class="load_name">Loading...</h3>
+        <div class="load_c">
+            <div class="loading"><div class="lin"></div></div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <!-- ! Wrap -->
+    <div class="wrap">
+        <div class="container"></div>
+        <button class="changing_btn">Sign up</button>
+        <div class="log"></div>
+        <div class="sign"></div>
+    </div>
+    <!-- ! Radio buttom -->
+    <div class="error"><p class="error_item">Username yoki password xato kiritilgan!</p></div>
+    <div class="radio radio_fix">
+        <button class="bars"><p>Animatsiyalar</p><i class="fa fa-bars" id="iconn"></i></button>
+        <label class="rd" for="r1">
+            <input type="radio" name="radio" id="r1">
+            Default animatsiya.
+        </label>
+        <label class="rd" for="r2">
+            <input type="radio" name="radio" id="r2">
+            Animatsiyaga skew qo'shish.
+        </label>
+        <label class="rd" for="r3">
+            <input type="radio" name="radio" id="r3">
+            Animatsiyaga rotate qo'shish.
+        </label>
+        <label class="rd" for="r4">
+            <input type="radio" name="radio" id="r4">
+            Animatsiyaga scale qo'shish.
+        </label>
+        <label class="rd" for="r5">
+            <input type="radio" name="radio" id="r5">
+            Animatsiyaga translate qo'shish.
+        </label>
+    </div>
+    </div>
+    <!--! SITE -->
+    <div class="my_container">
+        <div class="log_out">Log Out <i class="lon"> </i></div>
+        <div class="my_item">
+            <div class="my_header">
+                <div class="my_img"></div>
+                <h1>SHAEDUL_OFF</h1>
+            </div>
+            <ul class="socials">
+                <li><a target="_blank" href="https://instagram.com/shaedul_off"><i class="fa fa-instagram"></i></a></li>
+                <li><a target="_blank" href="https://t.me/Shaedul_Off"><i class="fa fa-telegram"></i></a></li>
+                <li><a target="_blank" href="https://www.facebook.com/ShaedulOff"><i class="fa fa-facebook"></i></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/shohjahon-shaydullayev-582a11226"><i class="fa fa-linkedin"></i></a></li>
+                <li><a target="_blank" href="https://github.com/ShaedulOffDev"><i class="fa fa-github"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- ! Templates -->
+    <template class="login_temp">
+        <form class="form">
+            <label>Log in</label>
+            <input placeholder="Username" type="name" name="name" id="name">
+            <div class="key">
+                <input placeholder="Password" type="password" name="password" id="password">
+                <i class="fa fa-eye" id="icon"></i>
+            </div>
+            <button type="submit" class="submit">Submit</button>
+        </form>
+    </template>
+    <template class="signup_temp">
+        <form class="form">
+            <label>Sign up</label>
+            <input placeholder="Username" type="name" name="name" id="name">
+            <input placeholder="Email(не обязательно)" type="email" name="email" id="email">
+            <div class="key">
+                <input placeholder="Password" type="password" name="password" id="password">
+                <i class="fa fa-eye" id="icon"></i>
+            </div>
+            <button type="submit" class="submit">Submit</button>
+        </form>
+    </template>
+    <!-- JS link -->
+    <script src="script.js"></script>
+</body>
+</html>
