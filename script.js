@@ -244,7 +244,7 @@ form[2].addEventListener("click", (x) => {
             obj = { name: ElName[2].value, key: ElKey[2].value };
             ElName[2].value = "";
             ElKey[2].value = "";
-            alert('Ro\'yxatdan muvoffaqiyatli o\'tdingiz!')
+            alert('You have successfully registered!')
         }
         BAZA.push(obj);
         localStorage.setItem("baza19018", JSON.stringify(BAZA));
